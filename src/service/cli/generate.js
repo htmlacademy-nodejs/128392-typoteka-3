@@ -6,10 +6,10 @@ const {CATEGORIES, DEFAULT_COUNT, MAX_COUNT, SENTENCES, TITLES, FILE_NAME, TimeI
 const {ExitCode} = require(`../../constants`);
 
 const generateOffers = (count) => (
-  Array(count).fill({}).map(() => ({
+  Array.from({length: count}, () => ({
     title: TITLES[getRandomInt(0, TITLES.length - 1)],
-    createdDate: new Date(Date.now() - getRandomInt(0, TimeInMilliseconds.MONTH * 3)),
-    announce: shuffle(SENTENCES).slice(0, getRandomInt(1, 5)).join(` `),
+    createdDate: new Date(Date.now() - getRandomInt(0, TimeInMilliseconds.THREE_MONTHS)),
+    announce: shuffle(SENTENCES).slice(0, getRandomInt(1, SENTENCES.length - 1)).join(` `),
     fullText: shuffle(SENTENCES).slice(0, getRandomInt(1, SENTENCES.length - 1)).join(` `),
     category: [CATEGORIES[getRandomInt(0, CATEGORIES.length - 1)]],
   }))

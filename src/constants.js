@@ -70,4 +70,5 @@ module.exports.TimeInMilliseconds = {
   HOUR: 3600000,
   DAY: 86400000,
   MONTH: 2592000000,
+  THREE_MONTHS: 7776000000
 };
