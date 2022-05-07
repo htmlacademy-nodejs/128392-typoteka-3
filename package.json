@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/stradzhu/128392-typoteka-3#readme",
   "devDependencies": {
+    "chalk": "4.1.2",
     "eslint": "8.14.0",
     "eslint-config-htmlacademy": "0.6.0"
   }
