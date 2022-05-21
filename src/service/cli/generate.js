@@ -4,8 +4,7 @@ const chalk = require(`chalk`);
 const util = require(`util`);
 const fs = require(`fs`);
 const {getRandomInt, shuffle, readFileToArray} = require(`../../utils`);
-const {DEFAULT_COUNT, MAX_COUNT, FILE_NAME, TimeInMilliseconds} = require(`../../constants`);
-const {ExitCode} = require(`../../constants`);
+const {DEFAULT_COUNT, MAX_COUNT, FILE_NAME, TimeInMilliseconds, ExitCode} = require(`../../constants`);
 
 const generateOffers = async (count) => {
   const CATEGORIES = await readFileToArray(`categories.txt`);

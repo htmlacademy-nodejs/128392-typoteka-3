@@ -10,6 +10,10 @@ module.exports.DEFAULT_COMMAND = `--help`;
 
 module.exports.FILE_NAME = `mocks.json`;
 
+module.exports.DEFAULT_PORT = 3000;
+
+module.exports.notFoundMessageText = `Not found`;
+
 module.exports.ExitCode = {
   SUCCESS: 0,
   ERROR: 1,
@@ -21,4 +25,12 @@ module.exports.TimeInMilliseconds = {
   DAY: 86400000,
   MONTH: 2592000000,
   THREE_MONTHS: 7776000000
+};
+
+module.exports.HttpCode = {
+  OK: 200,
+  NOT_FOUND: 404,
+  INTERNAL_SERVER_ERROR: 500,
+  FORBIDDEN: 403,
+  UNAUTHORIZED: 401,
 };
