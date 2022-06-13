@@ -12,6 +12,8 @@ module.exports.FILE_NAME = `mocks.json`;
 
 module.exports.DEFAULT_PORT = 3000;
 
+module.exports.EXPRESS_PORT = 8080;
+
 module.exports.notFoundMessageText = `Not found`;
 
 module.exports.ExitCode = {
