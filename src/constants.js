@@ -16,6 +16,10 @@ module.exports.EXPRESS_PORT = 8080;
 
 module.exports.notFoundMessageText = `Not found`;
 
+module.exports.PUBLIC_DIR = `public`;
+
+module.exports.TEMPLATES_DIR = `templates`;
+
 module.exports.ExitCode = {
   SUCCESS: 0,
   ERROR: 1,
